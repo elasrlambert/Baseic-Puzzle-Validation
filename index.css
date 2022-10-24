@@ -1,0 +1,84 @@
+:root{
+    background-color: #010101;
+}
+.border-box{
+    width: 650px;
+    height: 550px;
+    background-color: antiquewhite;
+    margin: 50px auto;
+    padding-top: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px 2px #fff;
+}
+.border-box h2{
+    color: #fff;
+    text-shadow: 0 0 5px #000,0 0 5px #000,0 0 5px #000,0 0 5px #000;
+    text-align: center;
+}
+.puzzle-box{
+    width: 600px;
+    height: 450px;
+    /* margin: 50px auto; */
+    /* border: 1px solid #666; */
+    position: relative;
+    overflow: hidden;
+    margin: 25px;
+    margin-bottom: 0;
+    box-shadow: 0 0 5px 2px #fff;
+}
+
+.puzzle-box .top{
+    height: 350px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.puzzle-box .top .triggered-box{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    /* background-color: orange; */
+    background-color: rgba(255, 11, 0, 0.3);
+    box-shadow: 0 0 5px 2px #fff;
+    z-index: 9;
+}
+.puzzle-box .top .target-box{
+    
+    width: 100px;
+    height: 100px;
+    /* background-color: #000; */
+    /* background-color: rgba(0, 0, 0, 1); */
+    opacity: 1;
+    box-shadow: 0 0 5px  #fff;
+    z-index: 0;
+    overflow: hidden;
+}
+.puzzle-box .top img{
+    width: 100%;
+    z-index: -9;
+    background-clip: border-box;
+}
+.puzzle-box .bottom{
+    height: 100px;
+    width: 100%;
+    /* background-color: skyblue; */
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 2px #fff;
+}
+.puzzle-box .bottom .trigger-box{
+    position: absolute;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 5px  #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px #000,0 0 5px #000,0 0 5px #000,0 0 5px #000;
+    cursor: grab;
+}
+.puzzle-box .bottom .trigger-box strong{
+    user-select: none;
+}
