@@ -46,9 +46,7 @@
     
     width: 100px;
     height: 100px;
-    /* background-color: #000; */
-    /* background-color: rgba(0, 0, 0, 1); */
-    opacity: 1;
+    background-color: rgba(23, 26, 188, 0.575);
     box-shadow: 0 0 5px  #fff;
     z-index: 0;
     overflow: hidden;
